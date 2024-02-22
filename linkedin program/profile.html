@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+
+            <div class="search-box">
+                <img src="images/search1.jpeg">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center"> 
+            <ul>
+                <li><a href="#" class="active"><img src="images/home1.jpeg"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/my network 1.jpeg"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/job1.jpeg"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.jpeg"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification1.jpeg"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+            <img src="images/background-img.jpeg" class="nav-profile-img" onclick="toggleMenu()">
+        </div>
+        </div>
+
+<!-----------------------------------------profile-dropdown-menu-------------------------------------------->
+<div class="profile-menu-wrap" id="profileMenu">
+    <div class="profile-menu">
+        <div class="user-info">
+            <img src="images/background-img.jpeg" >
+            <div>
+                <h3>Neeraj Bhandari</h3>
+                <a href="#">See your profile</a>
+            </div>
+        </div>
+        <hr>
+        <a href="#" class="profile-menu-link">
+            <img src="images/feedback.jpeg">
+            <p>Give Feedback</p>
+            <span>></span>
+        </a>
+
+        <a href="#" class="profile-menu-link">
+            <img src="images/setting.jpeg">
+            <p>Setttings & Privacy</p>
+            <span>></span>
+        </a>
+
+        <a href="#" class="profile-menu-link">
+            <img src="images/help.jpeg">
+            <p>Help & Support</p>
+            <span>></span>
+        </a>
+
+        <a href="#" class="profile-menu-link">
+            <img src="images/display.jpeg">
+            <p>Display & Accessiblity</p>
+            <span>></span>
+        </a>
+
+        <a href="#" class="profile-menu-link">
+            <img src="images/logout.jpeg">
+            <p>Logout</p>
+            <span>></span>
+        </a>
+    </div>
+</div>
+
+    </nav>
+              <!---------------------------Navbar Close--------------------->
+    
+<div class="container">
+    <div class="profile-main">
+        <div class="profile-container">
+            <img src="images/cover-pic.jpeg" width="100%">
+            <div class="profile-container-inner">
+                <img src="images/background-img.jpeg" class="profile-pic">
+                <h1>Neeraj Bhandari</h1>
+                <b>Web Development Student | Study with CETPA Infotech</b>
+                <p>Uttrakhand, India &middot; <a href="#">Contact info</a></p>
+                <div class="mutual-connection">
+                    <img src="images/author1.jpeg">
+                    <span>1 mutual connection: Raj Tripathi</span>
+                </div>
+                <div class="profile-btn">
+                    <a href="#" class="primary-btn"><img src="images/connection.jpeg">Connect</a>
+                    <a href="#"><img src="images/chat.jpeg">message</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-description">
+            <h2>About</h2>
+            <p>The success of every websites depends on search engine optimisation and 
+                digital strategy. if you are on first page of all major search engines 
+                then are ahead among your competitors on first page of all major search
+            engines then you are ahead among your competitors.</p>
+                <a href="#" class="see-more-link">See more...</a>
+        </div>
+
+            <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="images/microsoft.jpeg">
+                    <div>
+                        <h3>Front-End Developer</h3>
+                        <b>Microsoft &middot; Fresher</b>
+                        <b>jan 2023 - Present &middot; 1o month</b>
+                        <p>Computer programming is the process of performing a particular 
+                            computation, usually by designing and building an executable computer
+                            program. </p>
+                            <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="images/slack.jpeg">
+                    <div>
+                        <h3>Full Stack Developer</h3>
+                        <b>Slack &middot; Fresher</b>
+                        <b>jan 2023 - Present &middot; 1o month</b>
+                        <p>Computer programming is the process of performing a particular 
+                            computation, usually by designing and building an executable computer
+                            program. </p>
+                            <hr>
+                    </div>
+                </div>
+
+                <div class="profile-desc-row">
+                    <img src="images/google.jpeg">
+                    <div>
+                        <h3>Web Developer</h3>
+                        <b>Google &middot; Fresher</b>
+                        <b>jan 2023 - Present &middot; 1o month</b>
+                        <p>Computer programming is the process of performing a particular 
+                            computation, usually by designing and building an executable computer
+                            program. </p>
+                            <hr>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+    <!---------profile-sidebar--------->
+    <div class="profile-sidebar"></div>
+</div>
+
+<script>
+
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+    }
+
+</script>
+
+</body>
+</html>
